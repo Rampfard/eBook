@@ -1,0 +1,46 @@
+.menu {
+    max-width: 665px;
+    margin: 0 auto;
+    position: relative;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__item + &__item {
+        margin-left: 48px;
+    }
+
+    &__link {
+        position: relative;
+        color: #bbafca;
+        line-height: 45px;
+        font-weight: 400;
+        padding-bottom: 14px;
+        transition: all 0.3s;
+        &::before {
+            position: absolute;
+            content: "";
+            left: auto;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            transition: all 0.3s;
+            background-color: #1b8bcc;
+        }
+
+        &:hover {
+            color: #fff;
+            &::before {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.header {
+    background-color: rgba(#000, .15);
+    padding-top: 17px;
+    padding-bottom: 28px;
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__search {
+        flex: 3;
+    }
+
+    .logo {
+        flex: 1;
+        margin-right: 30px;
+    }
+}

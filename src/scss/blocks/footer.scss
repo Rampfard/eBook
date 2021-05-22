@@ -1,0 +1,61 @@
+
+.footer {
+    padding: 65px 0 45px;
+    text-align: center;
+    background-color: rgba(#000, .2);
+    color: #fff;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    .logo {
+        transition: all 0.3s;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__copy {
+        font-size: 12px;
+    }
+}
+
+.footer-menu {
+    &__list {
+        display: flex;
+        margin-right: 75px;
+    }
+
+    &__item {
+        margin-right: 35px;
+    }
+
+    &__item:last-child {
+        margin: 0;
+    }
+
+    &__link {
+        transition: all 0.3s;
+        opacity: 0.3;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    &__link {
+        transition: all 0.3s;
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

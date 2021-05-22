@@ -1,0 +1,90 @@
+.slider {
+    position: relative;
+    max-width: 1300px;
+    padding-top: 45px;
+    padding-bottom: 145px;
+    margin: 0 auto;
+    border-bottom: 3px solid rgba(#242951, 0.3);
+    &__pagination {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 380px;
+        right: 5%;
+        bottom: 10%;
+    }
+
+    &__progressbar {
+        display: inline-block;
+        position: relative;
+        width: 85%;
+        height: 2px;
+        background-color: #3e3649;
+        background-image: linear-gradient(to right, #12608e, #12608e);
+        background-repeat: no-repeat;
+        background-size: 0 100%;
+        transition: background-size 1.5s ease-out;
+    }
+
+    &__counter {
+        color: #fff;
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+.slider-item {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+    &__info {
+        max-width: 530px;
+        padding-top: 70px;
+        z-index: 2;
+    }
+
+    &__suptitle {
+        font-size: 22px;
+        color: #75d1c6;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 56px;
+        line-height: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        font-size: 28px;
+        color: #bbafca;
+        margin-bottom: 53px;
+    }
+
+    &__img-box {
+        max-width: 760px;
+        margin-left: -30px;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.swiper-pagination {
+    width: auto;
+    bottom: 0;
+    position: relative;
+}
+
+.current-slide {
+    color: #77d4c2;
+    margin-right: 5px;
+}

@@ -1,0 +1,64 @@
+.search-form {
+    max-width: 580px;
+    position: relative;
+    &__input {
+        padding: 15px 15px 15px 58px;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid #847893;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        transition: all 0.3s;
+        width: 100%;
+        &::placeholder {
+            color: #b2b3c0;
+            font-weight: 400;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        padding: 0;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-icon {
+        width: 100%;
+        height: auto;
+        fill: #fff;
+    }
+}
+
+.contacts-form {
+    max-width: 420px;
+    &__element {
+        color: #fff;
+        width: 100%;
+        border: 1px solid #4a4866;
+        border-radius: 5px;
+        background-color: #161236;
+        outline: none;
+        padding: 24px;
+        &::placeholder {
+            color: #fff;
+            font-size: 15.91px;
+            font-weight: 400;
+        }
+    }
+
+    &__input {
+        margin-bottom: 20px;
+    }
+
+    &__message {
+        resize: none;
+        min-height: 148px;
+        margin-bottom: 40px;
+    }
+}

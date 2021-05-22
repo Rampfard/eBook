@@ -1,0 +1,49 @@
+.statistic {
+    max-width: 1980px;
+    margin: 0 auto;
+    background-image: url('../images/statistic-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    &__inner {
+        padding: 210px 0;
+        position: relative;
+        background-image: url('../images/static-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto;
+    }
+
+    &__info {
+        margin-right: 80px;
+    }
+
+    &__title {
+        font-size: 100px;
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 33px;
+    }
+
+    &__social {
+        max-width: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        img {
+            width: 24px;
+            height: auto;
+            max-height: 24px;
+        }
+    }
+}

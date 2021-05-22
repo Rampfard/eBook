@@ -1,0 +1,26 @@
+//Assets
+
+@import "config";
+@import "libs";
+@import "global";
+
+//Components
+
+@import "./components/buttons.scss";
+@import "./components/form-elements.scss";
+
+//Blocks
+
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/steps.scss";
+@import "./blocks/preview.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/statistic.scss";
+@import "./blocks/quote.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+
+
+@import "media";
