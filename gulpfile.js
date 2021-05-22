@@ -143,6 +143,7 @@ function styles() {
 function watching() {
     watch(['src/scss/**/*.scss'], styles);
     watch(['src/js/**/*.js', '!src/js/main.min.js'], buildJs);
+    watch(['src/fonts/*.*']).on('change', copyFonts);
     watch(['src/*.html']).on('change', copyHTML);
     watch(['src/images/**/*.*'], copyImages);
 }
@@ -159,5 +160,5 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 
 
-exports.build = series(cleanDist, styles, copyImages, prodJs, copyHTML);
+exports.build = series(cleanDist, styles, copyImages, copyFonts, prodJs, copyHTML);
 exports.default = parallel(css, styles, buildJs, copyHTML, copyImages, copyFonts, browsersync, watching);
