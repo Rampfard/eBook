@@ -33,7 +33,7 @@
                     <button class="user-btn btn">
                         <img src="images/icons/user-icon.svg" alt="">
                     </button>
-                    <button class="burger-btn btn">
+                    <button class="burger-btn btn" data-modal-open>
                         <span class="burger-btn__line"></span>
                     </button>
                 </div>
@@ -64,6 +64,24 @@
             <div class="slider__content swiper-container">
                 <div class="slider__wrapper swiper-wrapper">
                     <div class="slider-item swiper-slide">
+                        <div class="slider-item__info" data-swiper-parallax="-40%" data-aos="fade-right"
+                            data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+                            <div class="slider-item__suptitle">
+                                BACK TO SCHOOL
+                            </div>
+                            <div class="slider-item__title">
+                                SPECIAL 50% OFF
+                            </div>
+                            <div class="slider-item__subtitle">
+                                For our student community
+                            </div>
+                            <button class="btn main-btn slider-btn" data-modal-open><span>GET THE DEAL</span></button>
+                        </div>
+                        <div class="slider-item__img-box" data-aos="fade" data-aos-duration="1500">
+                            <img class="slider-item__img" src="images/slider-img.png" alt="photo">
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
                         <div class="slider-item__info" data-swiper-parallax="-40%">
                             <div class="slider-item__suptitle">
                                 BACK TO SCHOOL
@@ -74,7 +92,7 @@
                             <div class="slider-item__subtitle">
                                 For our student community
                             </div>
-                            <a class="btn main-btn slider-btn" href="#"><span>GET THE DEAL</span></a>
+                            <button class="btn main-btn slider-btn" data-modal-open><span>GET THE DEAL</span></button>
                         </div>
                         <div class="slider-item__img-box">
                             <img class="slider-item__img" src="images/slider-img.png" alt="photo">
@@ -91,7 +109,7 @@
                             <div class="slider-item__subtitle">
                                 For our student community
                             </div>
-                            <a class="btn main-btn slider-btn" href="#"><span>GET THE DEAL</span></a>
+                            <button class="btn main-btn slider-btn" data-modal-open><span>GET THE DEAL</span></button>
                         </div>
                         <div class="slider-item__img-box">
                             <img class="slider-item__img" src="images/slider-img.png" alt="photo">
@@ -108,7 +126,7 @@
                             <div class="slider-item__subtitle">
                                 For our student community
                             </div>
-                            <a class="btn main-btn slider-btn" href="#"><span>GET THE DEAL</span></a>
+                            <button class="btn main-btn slider-btn" data-modal-open><span>GET THE DEAL</span></button>
                         </div>
                         <div class="slider-item__img-box">
                             <img class="slider-item__img" src="images/slider-img.png" alt="photo">
@@ -125,30 +143,13 @@
                             <div class="slider-item__subtitle">
                                 For our student community
                             </div>
-                            <a class="btn main-btn slider-btn" href="#"><span>GET THE DEAL</span></a>
+                            <button class="btn main-btn slider-btn" data-modal-open><span>GET THE DEAL</span></button>
                         </div>
                         <div class="slider-item__img-box">
                             <img class="slider-item__img" src="images/slider-img.png" alt="photo">
                         </div>
                     </div>
-                    <div class="slider-item swiper-slide">
-                        <div class="slider-item__info" data-swiper-parallax="-40%">
-                            <div class="slider-item__suptitle">
-                                BACK TO SCHOOL
-                            </div>
-                            <div class="slider-item__title">
-                                SPECIAL 50% OFF
-                            </div>
-                            <div class="slider-item__subtitle">
-                                For our student community
-                            </div>
-                            <a class="btn main-btn slider-btn" href="#"><span>GET THE DEAL</span></a>
-                        </div>
-                        <div class="slider-item__img-box">
-                            <img class="slider-item__img" src="images/slider-img.png" alt="photo">
-                        </div>
-                    </div>
-                    
+
                 </div>
             </div>
             <div class="slider__pagination">
@@ -159,21 +160,24 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
     <section id="steps" class="steps">
         <div class="container">
             <div class="steps__inner">
                 <div class="title-box steps__title-box">
-                    <h2 class="steps__title title" data-aos="fade-up" data-aos-duration="350" data-aos-easing="ease-out">
+                    <h2 class="steps__title title" data-aos="fade-up" data-aos-duration="950"
+                        data-aos-easing="ease-out-cubic" data-aos-offset="50">
                         It's easy as this
                     </h2>
-                    <p class="steps__title-text title-box__text" data-aos="fade-up" data-aos-delay="150" data-aos-duration="250" data-aos-easing="ease-out">
+                    <p class="steps__title-text title-box__text" data-aos="fade" data-aos-delay="150"
+                        data-aos-duration="950" data-aos-easing="ease-out-cubic">
                         Four easy steps to get your new eBook. What are your waiting for?
                     </p>
                 </div>
                 <div class="steps__items">
-                    <div class="steps-item" data-aos="fade-right" data-aos-duration="350" data-aos-easing="ease-out">
+                    <div class="steps-item" data-aos="fade-right" data-aos-duration="950"
+                        data-aos-easing="ease-out-cubic">
                         <div class="steps-item__img-box">
                             <img class="steps-item__img" src="images/step-1.png" alt="">
                             <span class="steps-item__number">1</span>
@@ -186,7 +190,8 @@
                             incididunt.
                         </p>
                     </div>
-                    <div class="steps-item" data-aos="fade-right" data-aos-duration="350" data-aos-delay="50">
+                    <div class="steps-item" data-aos="fade-right" data-aos-duration="950" data-aos-delay="50"
+                        data-aos-easing="ease-out-cubic">
                         <div class="steps-item__img-box">
                             <img class="steps-item__img" src="images/step-2.png" alt="">
                             <span class="steps-item__number">2</span>
@@ -199,7 +204,8 @@
                             incididunt.
                         </p>
                     </div>
-                    <div class="steps-item" data-aos="fade-right" data-aos-duration="350" data-aos-delay="150">
+                    <div class="steps-item" data-aos="fade-right" data-aos-duration="950" data-aos-delay="150"
+                        data-aos-easing="ease-out-cubic">
                         <div class="steps-item__img-box">
                             <img class="steps-item__img" src="images/step-3.png" alt="">
                             <span class="steps-item__number">3</span>
@@ -212,7 +218,8 @@
                             incididunt.
                         </p>
                     </div>
-                    <div class="steps-item" data-aos="fade-right" data-aos-duration="350" data-aos-delay="250">
+                    <div class="steps-item" data-aos="fade-right" data-aos-duration="950" data-aos-delay="250"
+                        data-aos-easing="ease-out-cubic">
                         <div class="steps-item__img-box">
                             <img class="steps-item__img" src="images/step-4.png" alt="">
                             <span class="steps-item__number">4</span>
@@ -226,22 +233,25 @@
                         </p>
                     </div>
                 </div>
-                <a class="btn main-btn" href="#" data-aos="fade-up" data-aos-duration="350" data-aos-offset="50">GET THE DEAL</a>
+                <button class="btn main-btn" data-modal-open="" data-aos="fade" data-aos-duration="950"
+                    data-aos-offset="50">GET THE
+                    DEAL</button>
             </div>
         </div>
     </section>
 
     <section id="preview" class="preview">
         <div class="title-box preview__title-box">
-            <h2 class="preview__title title" data-aos="fade-up" data-aos-duration="350">
+            <h2 class="preview__title title" data-aos="fade-up" data-aos-duration="550"
+                data-aos-easing="ease-out-cubic">
                 eBook Preview
             </h2>
-            <p class="preview__title-text title-box__text" data-aos="fade-up" data-aos-duration="250" data-aos-delay="150">
+            <p class="preview__title-text title-box__text" data-aos="fade" data-aos-duration="550" data-aos-delay="150">
                 This is how your new eBook will look.
             </p>
         </div>
         <div class="preview__content">
-            <div class="preview__text" data-aos="fade-right" data-aos-duration="650">
+            <div class="preview__text" data-aos="fade-right" data-aos-duration="650" data-aos-easing="ease-out-cubic">
                 <p class="preview__text-paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
@@ -270,7 +280,7 @@
                 <span class="preview__text-point"></span>
             </div>
             <div class="preview__items">
-                <div class="preview-item" data-aos="fade-left" data-aos-duration="350">
+                <div class="preview-item" data-aos="fade-up" data-aos-duration="450" data-aos-easing="ease-out-cubic">
                     <div class="preview-item__img-box">
                         <img class="preview-item__img" src="images/prev-item-1.png" alt="">
                     </div>
@@ -284,7 +294,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="preview-item" data-aos="fade-left" data-aos-duration="350" data-aos-delay="100">
+                <div class="preview-item" data-aos="fade-up" data-aos-duration="450" data-aos-delay="100"
+                    data-aos-easing="ease-out-cubic">
                     <div class="preview-item__img-box">
                         <img class="preview-item__img" src="images/prev-item-2.png" alt="">
                     </div>
@@ -298,7 +309,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="preview-item" data-aos="fade-left" data-aos-duration="350"  data-aos-delay="150">
+                <div class="preview-item" data-aos="fade-up" data-aos-duration="450" data-aos-delay="150"
+                    data-aos-easing="ease-out-cubic">
                     <div class="preview-item__img-box">
                         <img class="preview-item__img" src="images/prev-item-3.png" alt="">
                     </div>
@@ -319,18 +331,20 @@
     <section id="reviews" class="reviews">
         <div class="container">
             <div class="reviews__title-box title-box">
-                <h2 class="reviews__title title" data-aos="fade-up" data-aos-duration="350">
+                <h2 class="reviews__title title" data-aos="fade-up" data-aos-duration="550">
                     Clients Reviews
                 </h2>
-                <p class="reviews__title-text title-box__text" data-aos="fade-up" data-aos-duration="250" data-aos-delay="150">
+                <p class="reviews__title-text title-box__text" data-aos="fade" data-aos-duration="550"
+                    data-aos-delay="150">
                     A few reviews from satisfied clients.
                 </p>
             </div>
             <div class="reviews__items">
-                <div class="reviews-item" data-aos="fade-right" data-aos-duration="450">
+                <div class="reviews-item" data-aos="fade-right" data-aos-duration="650" data-aos-easing="ease-out-cubic"
+                    data-aos-offset="200">
                     <div class="reviews-item__user">
                         <div class="reviews-item__avatar">
-                            <img class="reviews-item__img" src="images/avatar.png" alt="">
+                            <img class="reviews-item__img" src="images/avatar.png" alt="user">
                         </div>
                         <div class="reviews-item__name">
                             Andrei Fredy
@@ -358,16 +372,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews-item" data-aos="fade-up" data-aos-duration="450">
+                <div class="reviews-item" data-aos="zoom-in" data-aos-duration="650" data-aos-easing="ease-out-cubic"
+                    data-aos-offset="200">
                     <div class="reviews-item__user">
                         <div class="reviews-item__avatar">
-                            <img class="reviews-item__img" src="images/avatar.png" alt="">
+                            <img class="reviews-item__img" src="images/avatar-2.jpg" alt="user">
                         </div>
                         <div class="reviews-item__name">
-                            Andrei Fredy
+                            Fred Adreas
                         </div>
                         <div class="reviews-item__location">
-                            client from romania
+                            client from Portuguese 
                         </div>
                     </div>
                     <p class="reviews-item__text">
@@ -389,10 +404,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews-item" data-aos="fade-left" data-aos-duration="450">
+                <div class="reviews-item" data-aos="fade-left" data-aos-duration="650" data-aos-easing="ease-out-cubic"
+                    data-aos-offset="200">
                     <div class="reviews-item__user">
                         <div class="reviews-item__avatar">
-                            <img class="reviews-item__img" src="images/avatar.png" alt="">
+                            <img class="reviews-item__img" src="images/avatar.png" alt="user">
                         </div>
                         <div class="reviews-item__name">
                             Andrei Fredy
@@ -431,17 +447,17 @@
                 <div class="statistic__title">
                     <span class=" statistic__counter" data-count="12000">0</span>
                 </div>
-                <div class="statistic__subtitle">
+                <div class="statistic__subtitle" data-aos="fade" data-aos-duration="1000">
                     copies sold all over the world
                 </div>
                 <div class="statistic__social">
-                    <a class="statistic__link" href="#" data-aos="fade-up" data-aos-duration="350">
+                    <a class="statistic__link" href="#" data-aos="fade-up" data-aos-duration="550">
                         <img src="images/icons/facebook-logo.svg" alt="facebook">
                     </a>
-                    <a class="statistic__link" href="#" data-aos="fade-up" data-aos-duration="350" data-aos-delay="150">
+                    <a class="statistic__link" href="#" data-aos="fade-up" data-aos-duration="550" data-aos-delay="150">
                         <img src="images/icons/instagram-logo.svg" alt="instagram">
                     </a>
-                    <a class="statistic__link" href="#" data-aos="fade-up" data-aos-duration="350" data-aos-delay="200">
+                    <a class="statistic__link" href="#" data-aos="fade-up" data-aos-duration="550" data-aos-delay="200">
                         <img src="images/icons/twitter-logo.svg" alt="twitter">
                     </a>
                 </div>
@@ -450,22 +466,24 @@
     </section>
 
     <section id="quote" class="quote">
-        <div class="quote__img-box" data-aos="opacity" data-aos-duration="750">
+        <div class="quote__img-box" data-aos="fade" data-aos-duration="950" data-aos-easing="ease-out-cubic"
+            data-aos-offset="200">
             <img class="quote__img" src="images/quote-img.png" alt="photo">
         </div>
         <div class="quote__content">
-            <div class="quote__title" data-aos="fade-up" data-aos-duration="750">
+            <div class="quote__title" data-aos="fade" data-aos-duration="950" data-aos-offset="150">
                 “This book is a piece from heaven”
             </div>
-            <p class="quote__text" data-aos="fade-up" data-aos-duration="750">
+            <p class="quote__text" data-aos="fade-left" data-aos-duration="950">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
                 accumsan lacus vel facilisis.”
             </p>
-            <div class="quote__author" data-aos="opacity" data-aos-duration="750">
+            <div class="quote__author" data-aos="zoom-in" data-aos-duration="950">
                 <strong>Mark Jackson</strong> - Author
             </div>
-            <a class="btn main-btn" href="#" data-aos="opacity" data-aos-duration="750" data-aos-delay="50">BUY EBOOK</a>
+            <button class="btn main-btn" data-modal-open data-aos="fade" data-aos-duration="1250"
+                data-aos-delay="50">BUY EBOOK</button>
         </div>
     </section>
 
@@ -480,7 +498,8 @@
                         <span class="contacts__text-blue">Phone: </span> <a href="tel:000-000-0000">000-000-0000</a>
                     </div>
                     <div class="contacts__email">
-                        <span class="contacts__text-blue">Email: </span> <a href="mailto:example@email.com">example@email.com</a>
+                        <span class="contacts__text-blue">Email: </span> <a
+                            href="mailto:example@email.com">example@email.com</a>
                     </div>
                     <div class="contacts__address">
                         1701 N. Charles Street Baltimore, MD 21202
@@ -492,10 +511,13 @@
                 </div>
                 <div class="contacts__form">
                     <form class="contacts-form">
-                        <input type="text" class="contacts-form__name contacts-form__input contacts-form__element" placeholder="Name">
-                        <input type="text" class="contacts-form__email contacts-form__input contacts-form__element" placeholder="Email Address">
-                        <textarea class="contacts-form__message contacts-form__element" placeholder="Message"></textarea>
-                        <button type="submit" class="btn main-btn contacts-btn">SEND MESSAGE</button>
+                        <input type="text" class="contacts-form__name contacts-form__input contacts-form__element"
+                            placeholder="Name">
+                        <input type="text" class="contacts-form__email contacts-form__input contacts-form__element"
+                            placeholder="Email Address">
+                        <textarea class="contacts-form__message contacts-form__element"
+                            placeholder="Message"></textarea>
+                        <button class="btn main-btn contacts-btn" type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
@@ -547,6 +569,26 @@
         </div>
     </footer>
 
+
+    <div class="modal" data-modal-close>
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <span class="modal__close" data-modal-close>x</span>
+                <div class="modal__text">
+                    Send us message
+                </div>
+                <form class="contacts-form">
+                    <input type="text" class="contacts-form__name contacts-form__input contacts-form__element"
+                        placeholder="Name" required>
+                    <input type="text" class="contacts-form__email contacts-form__input contacts-form__element"
+                        placeholder="Email Address" required>
+                    <textarea class="contacts-form__message contacts-form__element" placeholder="Message"
+                        required></textarea>
+                    <button type="submit" class="btn main-btn contacts-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
