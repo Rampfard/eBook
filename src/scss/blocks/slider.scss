@@ -38,8 +38,7 @@
 .slider-item {
     display: flex;
     position: relative;
-    overflow: hidden;
-    
+    cursor: grab;
     &__info {
         max-width: 530px;
         padding-top: 70px;

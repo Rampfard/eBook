@@ -113,7 +113,9 @@
     }
 
     .slider__progressbar {
-        height: 3px;
+        height: 2px;
+        background-color: rgba(#fff, .2);
+        background-image: linear-gradient(to right, #06bc9e, #146ea7);
     }
 
     .slider-item {
@@ -274,8 +276,7 @@
         background-color: rgba(0, 0, 0, 0.9);
         height: 100vh;
         width: 250px;
-        padding-top: 20%;
-        padding-bottom: 20%;
+        padding: 20% 5%;
         transform: translateX(150%);
         top: 0;
         right: 0;
@@ -476,6 +477,16 @@
 
         &__content {
             text-align: center;
+        }
+    }
+
+    .modal {
+        &__dialog {
+            max-width: 300px;
+        }
+
+        &__header {
+            margin-bottom: 10px;
         }
     }
 }

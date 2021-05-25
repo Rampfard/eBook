@@ -6,12 +6,16 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    // Moz Scrollbar
+    scrollbar-width: thin;
+    scrollbar-color: #77d4c2 #146ea7;
 }
 
 :root {
     --title-color: #fff;
     --user-font: 'Montserrat', sans-serif;
 }
+
 
 body {
     font-family: var(--user-font);
@@ -22,6 +26,16 @@ body {
     background-size: cover;
     background-position: top;
     overflow-x: hidden;
+    &::-webkit-scrollbar {
+        background: rgba(#000, .4);
+        width: 8px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to bottom, #77d4c2, #146ea7);
+        border-radius: 6px;
+    }
+
 }
 
 h1,

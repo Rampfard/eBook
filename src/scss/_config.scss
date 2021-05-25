@@ -14,9 +14,9 @@
 }
 
 @include font('Montserrat', normal, 400, '../fonts/montserrat-400.woff2');
+@include font('Montserrat', normal, 500, '../fonts/montserrat-500.woff2');
 @include font('Montserrat', normal, 600, '../fonts/montserrat-600.woff2');
 @include font('Montserrat', normal, 700, '../fonts/montserrat-700.woff2');
-@include font('Montserrat', normal, 500, '../fonts/montserrat-500.woff2');
 
 // Styles 
 
@@ -26,11 +26,6 @@
 
 // AOS animation
 
-[data-aos="opacity"] {
-	opacity: 0;
-	transition-property: opacity;
-  
-	&.aos-animate {
-	  opacity: 1;
-	}
+[data-aos="transition-all"] {
+	transition-property: all;
 }

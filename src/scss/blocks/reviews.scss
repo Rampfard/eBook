@@ -21,6 +21,8 @@
     background-color: rgba(255, 255, 255, 0.03);
     max-width: 370px;
     padding: 26px 40px 15px;
+    display: flex;
+    flex-direction: column;
     &__user {
         text-align: center;
         margin-bottom: 30px;
@@ -34,6 +36,11 @@
         background-color: #110223;
         margin: 0 auto;
         margin-bottom: 15px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     &__name {
@@ -57,12 +64,13 @@
         font-weight: 500;
         color: #847893;
         padding-bottom: 25px;
-        margin-bottom: 26px;
-        border-bottom: 1px solid rgba(#000, 0.2);
+        // margin-bottom: 26px;
     }
 
     &__rate {
         text-align: center;
+        margin-top: auto;
+        border-top: 1px solid rgba(#000, 0.2);
     }
 
     &__descr {

@@ -3,7 +3,6 @@
     margin: 0 auto;
     padding: 80px 15px;
     border-bottom: 3px solid rgba(#fff, 0.1);
-
     &__title-box {
         margin-bottom: 60px;
     }
@@ -23,7 +22,6 @@
         position: relative;
         flex-wrap: wrap;
         margin-top: 54px;
-        overflow: hidden;
     }
 }
 
@@ -41,6 +39,9 @@
     border-radius: 20px;
     position: relative;
     margin-right: 150px;
+    ::-webkit-scrollbar-thumb {
+        background-image: #fff;
+    }
     &-point {
         position: absolute;
         height: 35px;
